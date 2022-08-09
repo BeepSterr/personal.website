@@ -5,11 +5,112 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f00c16c-0371-4775-9324-1efc73f52aa4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/steamlinker/privacy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/steamlinker/privacy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/steamlinker/tos.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/steamlinker/tos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/asset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/filelocation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/transcoder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/block.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib_old/block.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/meta.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib_old/meta.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/email_me.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/log/warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/lunega/lunega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/lunega/lunega_robotics.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/neocities_button.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/notoweb3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/other_sites/hhgreggcultbutton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/other_sites/litw-stamp.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/other_sites/newlambda.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/other_sites/noweb32webp.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/sfx/blip.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/sfx/message.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/sfx/redeem.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/site/badge_static.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/site/beep_run.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/site/beep_run.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/site/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/site/console.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/site/construction.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/site/error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/site/g/email1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/site/missing_texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/site/new.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/site/star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/site/stars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/site/wallpaper.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/MIku Centrist.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/aaaaaaaaa.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/ass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/bad_descide.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/button1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/button5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/discord.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/eevees.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/fuck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/go_to_hell.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/jk20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/luigi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/na.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/newlambda.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/noweb32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/penis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/rightclick.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/shit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/supidbitch.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/media/stamps/xKRniLV.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/script/funnies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/script/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/script/site.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/style/dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/style/funny.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/style/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/main/nav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/main/nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/stuff/stampbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/stuff/stampbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/templates/base_template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/templates/base_template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/templates/blog_template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/templates/blog_template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/templates/dark.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/templates/dark.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/test/bloglist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/test/bloglist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blog/2021/move_to_neo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blog/2021/move_to_neo.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blog/2022/new_year_new_mobo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blog/2022/new_year_new_mobo.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/globals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/about_me.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/about_me.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/characters/bei/bei.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/characters/bei/bei.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/characters/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/characters/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/characters/lunega.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/characters/lunega.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/characters/sterr/sterr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/characters/sterr/sterr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/characters/yves/yves.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/characters/yves/yves.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/discord.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/discord.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/steamlinker/privacy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/steamlinker/privacy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/steamlinker/tos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/steamlinker/tos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/stuff.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/stuff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/stuff/unfinished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/stuff/unfinished.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +123,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="new_soup" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,7 +140,6 @@
     <setting file="file://$PROJECT_DIR$/.github/workflows/main.yml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/pages/index.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="do-ams3-beepcubed" />
@@ -56,32 +156,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/admin/PhpstormProjects/personal.website/src/pages/legal",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.16.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.47&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rickmegens/PhpstormProjects/personal.website/src/blocks/templates&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/rickmegens/Library/Application Support/JetBrains/Toolbox/apps/PhpStorm/ch-0/221.5921.28/PhpStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/blocks/templates" />
+      <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\pages\legal" />
       <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\pages" />
       <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\assets\media\sfx" />
-      <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\assets\media\other_sites" />
-      <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\pages\characters" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/chars/quirk" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\pages\legal" />
       <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\assets\media\other_sites" />
       <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\blocks\templates\base" />
-      <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\assets\media\lunega" />
-      <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\pages" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Development Server">
@@ -141,6 +246,9 @@
       <workItem from="1651595436117" duration="29000" />
       <workItem from="1651608982448" duration="523000" />
       <workItem from="1653172786722" duration="906000" />
+      <workItem from="1659769815484" duration="993000" />
+      <workItem from="1659772246398" duration="1226000" />
+      <workItem from="1659979991678" duration="11530000" />
     </task>
     <task id="LOCAL-00001" summary="new year!!!!">
       <created>1640992350215</created>

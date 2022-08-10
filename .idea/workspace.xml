@@ -5,34 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f00c16c-0371-4775-9324-1efc73f52aa4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/buttons/badge_beeps.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/buttons/email1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/buttons/neocities_button.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/friends/hhgreggcultbutton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/friends/litw-stamp.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/friends/newlambda.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/friends/noweb32webp.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/friends/wyrmtunnel_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/main/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/main/console.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/stickers/hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/stickers/hello.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/characters/bei/banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/characters/characters.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/characters/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/characters/index.html.meta.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/characters/sterr/banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/favicon.png.meta.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/transcoder.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/transcoder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_old/block.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib_old/meta.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.template/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/.template/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/characters/quirk/banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/characters/yves/banner.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/index.html.meta.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/index.html.meta.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,24 +53,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.16.0",
-    "javascript.nodejs.core.library.typings.version": "16.11.47",
-    "last_opened_file_path": "/Users/rickmegens/PhpstormProjects/personal.website/src/characters/sterr",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/rickmegens/Library/Application Support/JetBrains/Toolbox/apps/PhpStorm/ch-0/221.5921.28/PhpStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.16.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.47&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rickmegens/PhpstormProjects/personal.website/src/characters/sterr&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/rickmegens/Library/Application Support/JetBrains/Toolbox/apps/PhpStorm/ch-0/221.5921.28/PhpStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/characters/sterr" />
@@ -173,7 +148,7 @@
       <workItem from="1659772246398" duration="1226000" />
       <workItem from="1659979991678" duration="11530000" />
       <workItem from="1660024219614" duration="208000" />
-      <workItem from="1660153961840" duration="18734000" />
+      <workItem from="1660153961840" duration="18898000" />
     </task>
     <task id="LOCAL-00001" summary="new year!!!!">
       <created>1640992350215</created>
@@ -420,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660158658359</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="i am a god">
+      <created>1660173745535</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1660173745535</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,9 +411,19 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="main.yml" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="improvements to build system" />
     <MESSAGE value="[deploy] add more images, remove new years banner" />
     <MESSAGE value="[deploy] attempt to fix deploy script" />
     <MESSAGE value="[deploy] broke the build file" />
@@ -456,7 +448,8 @@
     <MESSAGE value="start on v2" />
     <MESSAGE value="got templates working" />
     <MESSAGE value="got livereload working" />
-    <option name="LAST_COMMIT_MESSAGE" value="got livereload working" />
+    <MESSAGE value="i am a god" />
+    <option name="LAST_COMMIT_MESSAGE" value="i am a god" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

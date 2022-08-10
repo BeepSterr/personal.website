@@ -23,7 +23,7 @@ export default {
             name: "Quirk",
             path: 'quirk',
             description: '.',
-            pronouns: 'it'
+            pronouns: ['it', 'they'].join('/')
         },
         {
             name: "Jacob",

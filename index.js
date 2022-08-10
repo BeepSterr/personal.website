@@ -78,7 +78,6 @@ function build(input, output){
                 let asset = new Asset(Path.join(source, file), Path.join(destination, file));
                 promises.push(asset.getTranscoder().startTranscode());
 
-
             }
         });
 
@@ -112,6 +111,10 @@ async function serve(dist_folder, port) {
     app.use('/', serveIndex(dist_folder, {'icons': true}));
     server = app.listen(port, function () {
         log('LocalServer/ReloadDone', 'http://localhost:' + port.toString())
+    }).on('error', ()=>{
+        setTimeout( ()=> {
+            serve(dist_folder, port);
+        }, 500)
     });
 
 }

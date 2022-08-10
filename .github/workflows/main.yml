@@ -23,10 +23,10 @@ jobs:
         with:
           node-version: '16.x'
       - run: npm install
-      - run: node builder -fas
+      - run: node index build
       - name: Deploy to neocities
         uses: bcomnes/deploy-to-neocities@v1
         with:
           api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
           cleanup: true
-          dist_dir: output
+          dist_dir: dist

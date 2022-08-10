@@ -1,10 +1,29 @@
 <html>
     <head>
-        <title>Cool Website!</title>
+        <title>{{title}}</title>
         <script src="http://localhost:35729/livereload.js"></script>
         <link rel="stylesheet" href="/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        {{{main}}}
+        <video class="background" playsinline="" autoplay="" muted="" loop="" poster="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1263950/4f50d2ac7486e3a98c37024d40150d87d2b29019.jpg">
+            <source src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1263950/f23886b58f6060646bd1442e0e639c91c229c1d6.webm" type="video/webm">
+            <source src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1263950/e85ccee455e0712e4abedb3cb0bea01c2799f9b1.mp4" type="video/mp4">
+        </video>
+        <main class="{{style}}">
+
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/characters/index.html">Characters</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/discord.html">Annoy me</a></li>
+                </ul>
+            </nav>
+            {{{main}}}
+            <footer>
+                Compiled on {{now}}
+            </footer>
+        </main>
     </body>
 </html>

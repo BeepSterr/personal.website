@@ -50,7 +50,7 @@ program.command('serve')
     chokidar.watch(source).on('change', async (file, event) => {
         await build(opts.input, opts.output);
         await serve(opts.output, port);
-        liveReloadServer.refresh("/");
+        liveReloadServer.refresh(file);
     });
 
 });

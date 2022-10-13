@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: '16.x'
       - run: npm install
-      - run: node index build
+      - run: npm run build
       - name: Deploy to neocities
         uses: bcomnes/deploy-to-neocities@v1
         with:

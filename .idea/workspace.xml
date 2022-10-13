@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f00c16c-0371-4775-9324-1efc73f52aa4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -433,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665687230246</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="all my homies are hostless">
+      <created>1665687567867</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1665687567867</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +462,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[deploy] forgot about blogs, sorry for the many deploys" />
     <MESSAGE value="Update version :)" />
     <MESSAGE value="Add package.json to global meta" />
     <MESSAGE value="fix: double scrollbar" />
@@ -480,7 +486,8 @@
     <MESSAGE value="Nested template metadata &amp; tailwindcss" />
     <MESSAGE value="Markdown, Fix merging of metadata, &amp; implement new website stuff" />
     <MESSAGE value="new script" />
-    <option name="LAST_COMMIT_MESSAGE" value="new script" />
+    <MESSAGE value="all my homies are hostless" />
+    <option name="LAST_COMMIT_MESSAGE" value="all my homies are hostless" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

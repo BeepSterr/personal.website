@@ -6,7 +6,7 @@
   "website": "https://beeps.dev",
   "type": "module",
   "scripts": {
-    "build": "node index.js build",
+    "build": "export NODE_ENV=production && node index.js build",
     "serve": "node index.js serve"
   },
   "author": "BeepSterr",

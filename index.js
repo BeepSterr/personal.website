@@ -27,6 +27,7 @@ program.command('build')
 .option('-i, --input <path>', 'path to input directory', './src')
 .option('-o, --output <path>', 'path to output directory', './dist')
 .action((str, options) => {
+    global.debug = false;
     build(options.opts().input, options.opts().output);
 });
 
@@ -35,12 +36,32 @@ program.command('serve')
 .option('-i, --input <path>', 'path to input directory', './src')
 .action(async (str, options) => {
 
+    global.debug = false;
     const opts = options.opts();
     opts.output = fs.mkdtempSync(path.join(os.tmpdir(), pkg.name));
+
+    process.stdin.setRawMode(true);
 
     const source = Path.resolve(opts.input);
     await build(opts.input, opts.output);
     const port = await getPort({port: portNumbers(8080, 8090)});
+
+    process.stdin.on('data', async function (data) {
+        if (data.toString().trim() === 'q') {
+            process.exit();
+        }
+        if (data.toString().trim() === 'f') {
+            await build(opts.input, opts.output);
+            await serve(opts.output, port);
+            liveReloadServer.refresh("/");
+        }
+        if (data.toString().trim() === 'd') {
+            global.debug = !global.debug;
+            await build(opts.input, opts.output);
+            await serve(opts.output, port);
+            liveReloadServer.refresh("/");
+        }
+    });
 
     serve(opts.output, port);
 
@@ -124,6 +145,14 @@ global.state = function(state){
     console.log('');
     console.log('\t', state, '  ', chalk.gray(new Date().toLocaleTimeString()));
     console.log('');
+
+    if(process.stdin.isRaw){
+        console.log('\t', chalk.gray('[f]'), 'Force rebuild');
+        console.log('\t', chalk.gray('[d]'), 'Toggle debug panel', debug);
+        console.log('\t', chalk.gray('[q]'), 'Quit');
+        console.log('');
+    }
+
 }
 
 global.state.FINISHED = chalk.bgGreenBright('DONE');

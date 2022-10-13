@@ -1,84 +1,110 @@
 {{#template id="/.template/main.html" title="Beep's Website"}}
+
+<img
+        src="/assets/characters/beep_floor.png"
+        style="
+            max-width: min(1000px, 100vw);
+            height: 500px;
+            margin: auto;
+            padding-left: 80px;
+            margin-bottom: -125px;
+            object-fit: contain;
+            object-position: bottom;
+        "
+        usemap="#boopthesnoot"
+/>
+
+<map name="boopthesnoot" class="bg-black">
+    <area shape="rect" coords=750,300,760,280" onclick="new Audio('/assets/sfx/honk.mp3').play()" alt="alttext">
+</map>
+
 <div class="console">
-    <h1>Welcome</h1>
-    <div class="split">
-        <img src="/assets/stickers/hello.png" style="max-width: 45%"/>
-        <div>
-            Welcome to the V2 of beeps.dev! My cool website with stuff and things.
-            <br><br>Feel free to poke around!!
+    <h1 class="text-white text-5xl">Welcome!</h1>
+    <p>
+        Welcome to my cool ass space. where I do cool shit all the time<br>
+        I'll add more pages n stuff overtime so feel free to check back later!!!
+    </p>
+    <br>
+</div>
+<div class="console">
+    <h1 class="text-white text-2xl">About me!</h1>
+    <p class="m-2 text-m">
+        Hii! I'm <code class="text-green-500">(Beep || Jill || Sterr)</code>
+        And I'm a 24 Year old Web Developer from The Netherlands.
+        I Also stream on <a href="https://twitch.tv/beepstr" class="text-blue-400"target="_blank">Twitch</a> if you want to tune in sometime.
+    </p>
+        <div class="m-2">
+            <h2 class="text-2xl">Interests</h2>
+            <ul class="list-disc">
+                <li>Web Development</li>
+                <li>Music (Production)</li>
+                <li>Minecraft</li>
+                <li>Team Fortress 2</li>
+            </ul>
+</div>
+
+
+    <br>
+</div>
+<div class="console">
+    <div class="character-grid">
+        <div id="character-list">
+            <h2 class="text-white text-2xl">Characters</h2>
+            <p style="margin-bottom: 10px;">I Have a <i>couple</i> characters that i've come up with over the years...<br>
+            <b>the links don't work yet, I'm adding character pages soon >~<</b></p><br><br><br>
+
+            <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-4">
+
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/lunega_robotics.png" class="character-image"/>
+                    <span>Sterr</span>
+                    <span class="au">Neo</span>
+                </a>
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/lunega_bg.png" class="character-image"/>
+                    <h2>Grey</h2>
+                </a>
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/lunega_bg.png" class="character-image"/>
+                    <h2>Vilo</h2>
+                </a>
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/lunega_bg.png" class="character-image"/>
+                    <h2>Sam</h2>
+                </a>
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/lunega_bg.png" class="character-image"/>
+                    <h2>Jacob</h2>
+                </a>
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/lunega_robotics.png" class="character-image"/>
+                    <h2>Yves</h2>
+                </a>
+                <hr><hr>
+                <hr><hr>
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/sparkle.png" class="character-image"/>
+                    <h2>Bei</h2>
+                </a>
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/sparkle.png" class="character-image"/>
+                    <h2>Annie</h2>
+                </a>
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/pokeball.png" class="character-image"/>
+                    <h2>Quirk</h2>
+                </a>
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/pokeball.png" class="character-image"/>
+                    <h2>Leaf</h2>
+                </a>
+            </div>
+
+            <!-- the right way to space stuff :^) -->
             <br><br>
 
-            <a href="https://neocities.org" target="_blank"><img src="assets/buttons/neocities_button.gif"/></a>
         </div>
     </div>
 </div>
-<div class="console">
-    <h1>About me</h1>
-    <p>
-        Heya, I'm (Beep, Jill, Sterr). I'm a 24 year old web dev from Netherlands, The.<br>
-        I use she/they/it pronouns and live in the CE(S)T timezone.<br><br>
 
-        My interests are few and far between and change all the time, Here are some:<br>
-    </p>
-
-    <br>
-    <h2>General</h2>
-    <ul>
-        <li>Music Production</li>
-        <li>Minecraft & Spigot Plugins</li>
-    </ul>
-
-    <br>
-    <h2>Games</h2>
-    <ul>
-        <li><a href="https://doesbeephaveaminecraftserverrightnow.com" target="_blank">Minecraft</a></li>
-        <li>The Sims</li>
-        <li>Team Fortress 2</li>
-        <li>Pokèmon</li>
-        <li>VRChat</li>
-    </ul>
-
-    <br>
-    <h2>Media</h2>
-    <ul>
-        <li>Homestuck</li>
-        <li>My Little Pony</li>
-    </ul>
-
-
-    <br>
-    <h2>Music</h2>
-    <ul>
-        <li>Everything Everything</li>
-        <li>De Staat</li>
-        <li>Vylet Pony</li>
-    </ul>
-
-    <br>
-    <p>
-        I've been screwing and toying with websites ever since i pirated MS Office Frontpage 2003 with grabbit on my barely functional windows xp laptop.<br>
-        <i style="opacity: 0.2;">Sadly the sites made with that are now lost to time.</i>
-    </p>
-</div>
-<div class="console">
-    <h1>My Playlist</h1>
-    <p>Currently working on ditching spotify...</p>
-</div>
-<div class="console">
-    <h1>Friends & Cool People</h1>
-    <div class="split">
-        <img src="/assets/stickers/hearts.png" style="max-width: 25%"/>
-        <div>
-            <div class="flex">
-                <a href="https://yesterweb.org/no-to-web3/" target="_blank"><img class="badge" src="/assets/friends/noweb32webp.webp"></a>
-                <a href="https://newlambda.neocities.org"><img class="badge" src="/assets/friends/newlambda.png"></a>
-                <a href="https://hhgreggcult.neocities.org"><img class="badge" src="/assets/friends/hhgreggcultbutton.png"></a>
-                <a href="https://lostintheworld.neocities.org/"><img class="badge" src="/assets/friends/litw-stamp.gif"></a>
-                <a href="https://wyrm.quest/"><img class="badge" src="/assets/friends/wyrmtunnel_button.png"></a>
-            </div>
-        </div>
-    </div>
-    If you'd like to link to me:
-    <img src="/assets/buttons/badge_beeps.png" style="margin-left: 10px; max-width: 80px"/>
-</div>
 {{/template}}

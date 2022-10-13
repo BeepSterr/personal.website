@@ -1,67 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,900&family=VT323&display=swap');
-* {
-  padding: 0;
-  margin: 0;
-  font-family: 'Lato', sans-serif;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-
-  &:focus, &:active, &:hover {
-    color: aqua;
-    text-decoration: none;
-  }
-
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 nav {
-  ul {
-    display: flex;
-    li {
-      display: inline-block;
-      min-width: 50px;
-      background-color: black;
-      text-align: center;
-
-      background-image: url(/assets/main/bg.png);
-      border-image-repeat: repeat;
-
-      margin: 0;
-
-      border: solid 1px black;
-
-      a {
-        display: inline-block;
-        min-width: 50px;
-        padding: 10px;
-      }
-
-      &:hover {
-        border: solid 1px white;
-      }
-
-      &:first-of-type {
-        border-radius: 50px 0 0 50px;
-      }
-      &:last-of-type {
-        border-radius: 0 50px 50px 0;
-      }
-    }
-  }
-}
-
-h1, h2, h3, h4, h5, h6, a {
-  font-family: 'VT323', monospace;
-}
-
-html, body {
-  background-color: black;
+  position: absolute;
+  top: 25px;
+  left: 25px;
 }
 
 .background {
-  position: static;
+  position: fixed;
   opacity: 1;
   top: 0;
   left: 0;
@@ -71,93 +19,149 @@ html, body {
   object-fit: cover;
   object-position: right center;
   pointer-events: none;
-  z-index: 1;
+  z-index: -100;
 }
 
-main {
+.scanlines {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 50px;
+  height: 100vh;
+  width: 100vw;
+  background:
+          radial-gradient(#000 0.5px,transparent 0.5px) 0   0   /10 px 3px,
+          radial-gradient(#000 0.5px,transparent 0.5px) 1px 1px /3px 3px,
+          radial-gradient(#000 0.5px,transparent 0.5px) 2px 2px /3px 3px;
+  z-index: -99;
+}
 
-  width: min(550px, 50%);
-  height: calc(100vh - 75px);
+.debug {
+  border: solid 2px red;
+  background-color: rgba(255,255,255,0.2);
+
+  position: fixed;
+
+  bottom: 0;
+  right: 0;
+
   overflow: scroll;
-
-  &.wide {
-    width: calc(100vw - 75px);
-  }
-
-}
-
-@media only screen and (max-width: 800px) {
-  main {
-    width: calc(100vw - 30px);
-    margin-left: 15px;
-    margin-top: 15px;
-  }
-}
-
-
-.console {
-  background-color: rgba(0,0,0,0.9);
-  padding: 25px;
-  margin-top: 35px;
   color: white;
 
+}
+
+.console {
+
+  background-image: url(/assets/main/bg.png);
   border: 1px solid;
   border-image-source: url(/assets/main/console.png);
   border-image-slice: 36;
   border-image-width: 36;
   border-image-outset: 8;
-
-  padding-top: 35px;
-
-  background-image: url(/assets/main/bg.png);
   border-image-repeat: repeat;
 
-  .split {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    &:first-child {
-       margin: 5px;
-       max-width: calc(50% - 10px);
-     }
-  }
+  padding: 25px 25px;
+  padding-bottom: 6px;
 
-  h1:first-child {
-    position: relative;
-    margin-top: -50px;
-    background-image: url(/assets/main/bg.png);
-    border-image-repeat: repeat;
-    border: solid 2px yellow;
-    border-radius: 0px;
-    padding: 0px 25px;
-    display: inline-block;
-  }
+  max-width: min(700px, calc(100% - 100px));
+  width: 100%;
+  margin: 50px auto;
 
-}
-
-footer {
-  font-family: 'VT323', monospace;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
   color: white;
-}
 
-.badge {
-  min-width: 80px;
-  display: inline-block;
-}
-
-.flex {
-  display: flex;
   overflow: hidden;
-  flex-wrap: wrap;
-  * {
-    margin: 2px;
+
+}
+
+.character-button {
+
+  margin: 5px;
+  transform: skew(-30deg);
+  background-color: rgba(0,0,0,0.8);
+
+  border: solid 1px white;
+
+  .au {
+    display: block;
+    margin-right: 10px;
+    font-size: 0.75rem;
+    text-align: center;
+    line-height: 20px;
+    padding: 5px;
   }
+
+  * {
+    transform: skew(30deg);
+  }
+
+  display: grid;
+  grid-template-columns: 35px auto 50px;
+
+  height: 45px;
+  line-height: 45px;
+  font-size: 1.5rem;
+  gap: 25px;
+
+  padding: 1px;
+  padding-left: 20px;
+  align-items: center;
+
+  transition: all 0.2s ease;
+
+  &:hover{
+    background-color: rgba(255,255,255,0.8);
+    border: solid 1px black;
+    color: black;
+  }
+
+
+}
+
+.character-button:nth-child(4n + 2) {
+  transform: skew(30deg);
+  * {
+    transform: skew(-30deg);
+  }
+}
+.character-button:nth-child(4n +1) {
+  transform: skew(30deg);
+  * {
+    transform: skew(-30deg);
+  }
+}
+
+.character-grid {
+  background-image: url("/assets/characters/bei_neo_render.png");
+  background-size: contain;
+  background-position-x: right;
+  background-repeat: no-repeat;
+}
+
+.blog {
+  a {
+    color: rgb(96 165 250);
+  }
+
+  ul {
+    list-style-type: circle;
+  }
+
+  h1 {
+    margin-top: 10px;
+    font-size: 2rem;
+  }
+
+  h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    margin-top: 10px;
+    font-size: 1.25rem;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+
 }

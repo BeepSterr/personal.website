@@ -1,100 +1,168 @@
-(async function() {
+#!/usr/bin/env node
 
-    const util = require('util');
-    const path = require('path');
-    const exec = require('child_process').exec;
-    const chokidar = require("chokidar");
+import { Command } from 'commander';
+import { readFileSync } from 'node:fs';
+import * as Path from "path"
+import Asset from "./lib/asset.js"
+import chalk from "chalk";
+import glob from "glob";
+import * as path from "path";
+import * as fs from "fs";
+import chokidar from "chokidar";
+import * as os from "os";
+import express from "express";
+import getPort, {portNumbers} from "get-port";
+import serveIndex from "serve-index";
+import * as livereload from "livereload";
 
-    switch(process.argv[2]){
+const pkg = JSON.parse(readFileSync('./package.json').toString());
+const program = new Command();
 
-        case "build":
+program.name(pkg.name)
+.description(pkg.description)
+.version(pkg.version);
 
-            var child = exec('node builder -fas')
-            child.stdout.pipe(process.stdout)
+program.command('build')
+.description('Builds a static site from start.')
+.option('-i, --input <path>', 'path to input directory', './src')
+.option('-o, --output <path>', 'path to output directory', './dist')
+.action((str, options) => {
+    global.debug = false;
+    build(options.opts().input, options.opts().output);
+});
 
+program.command('serve')
+.description('Builds & automatically reloads ')
+.option('-i, --input <path>', 'path to input directory', './src')
+.action(async (str, options) => {
 
-            break;
+    global.debug = false;
+    const opts = options.opts();
+    opts.output = fs.mkdtempSync(path.join(os.tmpdir(), pkg.name));
 
-        case "serve":
+    process.stdin.setRawMode(true);
 
-            function build(){
+    const source = Path.resolve(opts.input);
+    await build(opts.input, opts.output);
+    const port = await getPort({port: portNumbers(8080, 8090)});
 
-                if(build_instance === null){
+    process.stdin.on('data', async function (data) {
+        if (data.toString().trim() === 'q') {
+            process.exit();
+        }
+        if (data.toString().trim() === 'f') {
+            await build(opts.input, opts.output);
+            await serve(opts.output, port);
+            liveReloadServer.refresh("/");
+        }
+        if (data.toString().trim() === 'd') {
+            global.debug = !global.debug;
+            await build(opts.input, opts.output);
+            await serve(opts.output, port);
+            liveReloadServer.refresh("/");
+        }
+    });
 
-                    let command = `node builder -`
+    serve(opts.output, port);
 
-                    if(build_id){
-                        command += 'a';
-                    }
+    // Live-reload
+    const liveReloadServer = livereload.createServer();
 
-                    if(changed_files.size > 5 || build_id === 0){
-                        console.log('Commencing full build...');
-                        command += 'f'
-                    }else{
-                        command += ` --changed ${Array.from(changed_files).join(' ')}`
-                    }
+    chokidar.watch(source).on('change', async (file, event) => {
+        await build(opts.input, opts.output);
+        await serve(opts.output, port);
+        liveReloadServer.refresh(file);
+    });
 
-                    console.log(command);
+});
 
-                    build_id++;
+function build(input, output){
 
-                    build_instance = exec(command);
-                    build_instance.stdout.pipe(process.stdout)
+    state(state.BUILDING);
 
-                    build_instance.on('exit', function() {
-                        build_instance = null;
-                        changed_files.clear();
-                        has_assets = false;
-                    })
+    return new Promise( async (resolve, reject) => {
 
-                }else{
+        const source = path.resolve(input);
+        const destination = path.resolve(output);
+        const promises = [];
 
-                    clearTimeout(build_queue);
-                    build_queue = setTimeout(()=>{
-                        build();
-                    },500)
+        fs.rmSync(destination, {recursive: true, force: true});
 
+        glob("**/*", {cwd: source, mark: true}, async function (er, files) {
+            for (let file of files) {
+
+                // Skip directories!
+                if (file.endsWith('/')) {
+                    continue;
                 }
+
+                let asset = new Asset(Path.join(source, file), Path.join(destination, file));
+                promises.push(asset.getTranscoder().startTranscode());
 
             }
+        });
 
-            let changed_files = new Set();
-            let has_assets = true;
-            let build_instance = null;
-            let build_queue = null;
-            let build_id = 0;
-
-            let getPort = await import('get-port');
-            const port = await getPort.default({port: getPort.portNumbers(8080, 8090)});
-
-            const liveServer = require('live-server');
-            const server = liveServer.start({
-                port: port,
-                root: './output',
-                open: true,
+        setTimeout( () => {
+            Promise.all(promises).then(a => {
+                state(state.FINISHED);
+                resolve();
+            }).catch(a => {
+                resolve();
             });
+        }, 500)
 
+    });
 
-            chokidar.watch('src/').on('change', (pathname, event) => {
-                pathname = path.normalize(pathname).replace('src\\', '');
-                console.log('Change Detected:', pathname);
-                changed_files.add(pathname);
-                build();
-            });
-            chokidar.watch('src/assets').on('change', (pathname, event) => {
-                if(!has_assets){
-                    console.log('Assets have changed, including in build.');
-                }
-                has_assets = true;
-            });
+}
 
-            build();
+let server = null;
+async function serve(dist_folder, port) {
 
-            break;
-
-        default:
-            console.error(`${process.argv[2]} is not "build" or "serve"`)
-            break;
+    if (server !== null) {
+        server.close(function () {
+            server = null;
+            serve(dist_folder, port);
+        });
+        return;
     }
 
-})();
+    let app = express();
+    //app.use((await import('connect-livereload')).default);
+    app.use('/', express.static(dist_folder));
+    app.use('/', serveIndex(dist_folder, {'icons': true}));
+    server = app.listen(port, function () {
+        log('LocalServer/ReloadDone', 'http://localhost:' + port.toString())
+    }).on('error', ()=>{
+        setTimeout( ()=> {
+            serve(dist_folder, port);
+        }, 500)
+    });
+
+}
+
+global.state = function(state){
+    // console.clear();
+    console.log('');
+    console.log('\t', state, '  ', chalk.gray(new Date().toLocaleTimeString()));
+    console.log('');
+
+    if(process.stdin.isRaw){
+        console.log('\t', chalk.gray('[f]'), 'Force rebuild');
+        console.log('\t', chalk.gray('[d]'), 'Toggle debug panel', debug);
+        console.log('\t', chalk.gray('[q]'), 'Quit');
+        console.log('');
+    }
+
+}
+
+global.state.FINISHED = chalk.bgGreenBright('DONE');
+global.state.BUILDING = chalk.bgYellow('BUILDING');
+
+global.log = function(id, message){
+    console.log(
+        chalk.cyan( '\t', new Date().toLocaleTimeString()), '\t',
+        chalk.whiteBright(`${id}`),
+        message);
+}
+
+program.parse();

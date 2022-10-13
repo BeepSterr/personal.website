@@ -1,0 +1,49 @@
+<footer class="bg-black p-10">
+    <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-10 align-middle text-white justify-center" style="justify-items: center">
+        <div class="friends" style="text-align: center;">
+            <span class="text-2xl">Friends</span>
+            <div class="grid grid-cols-3 gap-2 flex-wrap items-center justify-center">
+                {{#each friends}}
+                <a href="{{href}}" class="text-white" target="_blank">
+                    <img src="/assets/friends/{{icon}}" alt="{{url}}'s button"/>
+                </a>
+                {{/each}}
+
+            </div>
+
+            <br><br>
+
+            <span>Wanna link back to me?</span><br>
+
+            <img style="margin: auto" src="/assets/buttons/badge_beeps.png" alt="Advertise me!"/><br>
+            <textarea class="font-mono text-black" style="width: 80%; margin: auto;">
+<a href="https://beeps.dev" target="_blank">
+    <img src="https://beeps.dev/assets/buttons/badge_beeps.png" alt="Beep's Website"/>
+</a></textarea>
+        </div>
+        <div class="socials flex gap-2 flex-wrap">
+            <span class="text-2xl">Footer Text</span>
+            <p>
+                Thank you so much for visiting my website.<br>
+                Wanna see how I made it? go to the <a href="https://github.com/BeepSterr/personal.website" class="text-blue-400" target="_blank">GitHub Repo</a>.<br>
+                <i class="text-gray-700">Yes, I did make a entire SSG just for this website.</i><br>
+                <br>
+
+                This website is proudly hosted by <a href="https://neocities.org" class="text-blue-400" target="_blank">Neocities</a>.<br>
+                You should check out <a href="https://neocities.org/activity" class="text-blue-400" target="_blank">other websites</a> on there!<br>
+                <i class="text-gray-700">And definitely make your own website, It's easy!</i><br>
+                <br>
+
+                If you wanna get in touch you can contact me on any socials ^^<br>
+
+                {{#each socials}}
+                    <a href="{{href}}" class="text-white p-5 inline-block text-blue-400" target="_blank">{{name}}</a>
+                {{/each}}
+            </p>
+        </div>
+    </div>
+    <div class="mt-10">
+        <code class="text-center text-white block">Built on {{now}}</code>
+        <!-- [[NOT IMPLEMENTED]] <span class="text-gray-700 text-center text-white block">Press ~ to enter developer mode.</span>-->
+    </div>
+</footer>

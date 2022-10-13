@@ -1,0 +1,14 @@
+{{#template id="/.template/main.html" title="Beep's Website"}}
+<div class="console">
+    <h1 class="text-white text-5xl">The Blog!</h1>
+    <p>
+        You've found the blog! Congratulations!<br>
+        Careful though, This is where i'll moan and bitch about stuff sometimes.<br><br>
+
+        {{#each blogs}}
+            <a href="/blog/{{path}}">{{name}}</a><br>
+        {{/each}}
+    </p>
+    <br>
+</div>
+{{/template}}

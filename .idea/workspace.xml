@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f00c16c-0371-4775-9324-1efc73f52aa4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/steamlinker/privacy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/steamlinker/privacy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/steamlinker/tos.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/steamlinker/tos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.template/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/.template/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="new_soup" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,7 +36,6 @@
     <setting file="file://$PROJECT_DIR$/.github/workflows/main.yml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/pages/index.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="do-ams3-beepcubed" />
@@ -50,38 +46,45 @@
   </component>
   <component name="ProjectId" id="234CoQn9uDO92qc4OG0iy5YB05M" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/admin/PhpstormProjects/personal.website/src/pages/legal",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.16.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.47&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rickmegens/PhpstormProjects/personal.website/src/blog&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/rickmegens/Library/Application Support/JetBrains/Toolbox/apps/PhpStorm/ch-0/221.5921.28/PhpStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\pages\legal" />
-      <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\pages" />
-      <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\assets\media\sfx" />
-      <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\assets\media\other_sites" />
-      <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\pages\characters" />
+      <recent name="$PROJECT_DIR$/src/blog" />
+      <recent name="$PROJECT_DIR$/src/.template" />
+      <recent name="$PROJECT_DIR$/src/characters/quirk" />
+      <recent name="$PROJECT_DIR$/src/characters/quirk/gallery" />
+      <recent name="$PROJECT_DIR$/src/characters/sterr" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\pages\legal" />
-      <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\assets\media\other_sites" />
-      <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\blocks\templates\base" />
-      <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\assets\media\lunega" />
-      <recent name="C:\Users\admin\PhpstormProjects\personal.website\src\pages" />
+      <recent name="$PROJECT_DIR$/src/blog" />
+      <recent name="$PROJECT_DIR$/src/characters/quirk/gallery" />
+      <recent name="$PROJECT_DIR$/src/characters" />
+      <recent name="$PROJECT_DIR$/src/assets/friends" />
+      <recent name="$PROJECT_DIR$/src/assets" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Development Server">
@@ -141,6 +144,14 @@
       <workItem from="1651595436117" duration="29000" />
       <workItem from="1651608982448" duration="523000" />
       <workItem from="1653172786722" duration="906000" />
+      <workItem from="1659769815484" duration="993000" />
+      <workItem from="1659772246398" duration="1226000" />
+      <workItem from="1659979991678" duration="11530000" />
+      <workItem from="1660024219614" duration="208000" />
+      <workItem from="1660153961840" duration="19266000" />
+      <workItem from="1660236848547" duration="4826000" />
+      <workItem from="1665518022795" duration="20000" />
+      <workItem from="1665518051136" duration="30729000" />
     </task>
     <task id="LOCAL-00001" summary="new year!!!!">
       <created>1640992350215</created>
@@ -366,24 +377,98 @@
       <option name="project" value="LOCAL" />
       <updated>1651609130704</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="start on v2">
+      <created>1660024261749</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1660024261749</updated>
+    </task>
+    <task id="LOCAL-00034" summary="got templates working">
+      <created>1660157828167</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1660157828167</updated>
+    </task>
+    <task id="LOCAL-00035" summary="got livereload working">
+      <created>1660158658359</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1660158658359</updated>
+    </task>
+    <task id="LOCAL-00036" summary="i am a god">
+      <created>1660173745535</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1660173745535</updated>
+    </task>
+    <task id="LOCAL-00037" summary="nevermind">
+      <created>1660173817627</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1660173817627</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Nested template metadata &amp; tailwindcss">
+      <created>1665526102201</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1665526102201</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Markdown, Fix merging of metadata, &amp; implement new website stuff">
+      <created>1665686888241</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1665686888241</updated>
+    </task>
+    <task id="LOCAL-00040" summary="new script">
+      <created>1665687230246</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1665687230246</updated>
+    </task>
+    <task id="LOCAL-00041" summary="all my homies are hostless">
+      <created>1665687567867</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1665687567867</updated>
+    </task>
+    <task id="LOCAL-00042" summary="i like to move it move it.">
+      <created>1665687742917</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1665687742917</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="main.yml" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[deploy] add a lot of cool shit" />
-    <MESSAGE value="[deploy] fix capital" />
-    <MESSAGE value="[deploy] add galleries" />
-    <MESSAGE value="improvements to build system" />
-    <MESSAGE value="[deploy] add more images, remove new years banner" />
-    <MESSAGE value="[deploy] attempt to fix deploy script" />
-    <MESSAGE value="[deploy] broke the build file" />
-    <MESSAGE value="[deploy] fix sitemap breaking EVERYTHING" />
-    <MESSAGE value="[deploy] forgot about blogs, sorry for the many deploys" />
-    <MESSAGE value="Update version :)" />
     <MESSAGE value="Add package.json to global meta" />
     <MESSAGE value="fix: double scrollbar" />
     <MESSAGE value="move meta &amp; env var to site.js, also adds site.js with small lore hints" />
@@ -399,6 +484,20 @@
     <MESSAGE value="stuff wip" />
     <MESSAGE value="Someone deleted my webhook &gt;:C [deploy]" />
     <MESSAGE value="remove macos requirement from deploy script [deploy]" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove macos requirement from deploy script [deploy]" />
+    <MESSAGE value="start on v2" />
+    <MESSAGE value="got templates working" />
+    <MESSAGE value="got livereload working" />
+    <MESSAGE value="i am a god" />
+    <MESSAGE value="nevermind" />
+    <MESSAGE value="Nested template metadata &amp; tailwindcss" />
+    <MESSAGE value="Markdown, Fix merging of metadata, &amp; implement new website stuff" />
+    <MESSAGE value="new script" />
+    <MESSAGE value="all my homies are hostless" />
+    <MESSAGE value="i like to move it move it." />
+    <option name="LAST_COMMIT_MESSAGE" value="i like to move it move it." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

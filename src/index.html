@@ -1,0 +1,110 @@
+{{#template id="/.template/main.html" title="Beep's Website"}}
+
+<img
+        src="/assets/characters/beep_floor.png"
+        style="
+            max-width: min(1000px, 100vw);
+            height: 500px;
+            margin: auto;
+            padding-left: 80px;
+            margin-bottom: -125px;
+            object-fit: contain;
+            object-position: bottom;
+        "
+        usemap="#boopthesnoot"
+/>
+
+<map name="boopthesnoot" class="bg-black">
+    <area shape="rect" coords=750,300,760,280" onclick="new Audio('/assets/sfx/honk.mp3').play()" alt="alttext">
+</map>
+
+<div class="console">
+    <h1 class="text-white text-5xl">Welcome!</h1>
+    <p>
+        Welcome to my cool ass space. where I do cool shit all the time<br>
+        I'll add more pages n stuff overtime so feel free to check back later!!!
+    </p>
+    <br>
+</div>
+<div class="console">
+    <h1 class="text-white text-2xl">About me!</h1>
+    <p class="m-2 text-m">
+        Hii! I'm <code class="text-green-500">(Beep || Jill || Sterr)</code>
+        And I'm a 24 Year old Web Developer from The Netherlands.
+        I Also stream on <a href="https://twitch.tv/beepstr" class="text-blue-400"target="_blank">Twitch</a> if you want to tune in sometime.
+    </p>
+        <div class="m-2">
+            <h2 class="text-2xl">Interests</h2>
+            <ul class="list-disc">
+                <li>Web Development</li>
+                <li>Music (Production)</li>
+                <li>Minecraft</li>
+                <li>Team Fortress 2</li>
+            </ul>
+</div>
+
+
+    <br>
+</div>
+<div class="console">
+    <div class="character-grid">
+        <div id="character-list">
+            <h2 class="text-white text-2xl">Characters</h2>
+            <p style="margin-bottom: 10px;">I Have a <i>couple</i> characters that i've come up with over the years...<br>
+            <b>the links don't work yet, I'm adding character pages soon >~<</b></p><br><br><br>
+
+            <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-4">
+
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/lunega_robotics.png" class="character-image"/>
+                    <span>Sterr</span>
+                    <span class="au">Neo</span>
+                </a>
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/lunega_bg.png" class="character-image"/>
+                    <h2>Grey</h2>
+                </a>
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/lunega_bg.png" class="character-image"/>
+                    <h2>Vilo</h2>
+                </a>
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/lunega_bg.png" class="character-image"/>
+                    <h2>Sam</h2>
+                </a>
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/lunega_bg.png" class="character-image"/>
+                    <h2>Jacob</h2>
+                </a>
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/lunega_robotics.png" class="character-image"/>
+                    <h2>Yves</h2>
+                </a>
+                <hr><hr>
+                <hr><hr>
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/sparkle.png" class="character-image"/>
+                    <h2>Bei</h2>
+                </a>
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/sparkle.png" class="character-image"/>
+                    <h2>Annie</h2>
+                </a>
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/pokeball.png" class="character-image"/>
+                    <h2>Quirk</h2>
+                </a>
+                <a href="#" class="character-button">
+                    <img src="/assets/characters/pokeball.png" class="character-image"/>
+                    <h2>Leaf</h2>
+                </a>
+            </div>
+
+            <!-- the right way to space stuff :^) -->
+            <br><br>
+
+        </div>
+    </div>
+</div>
+
+{{/template}}

@@ -27,6 +27,10 @@ export default {
     ],
     socials: [
         {
+            name: "Mastodon",
+            href: "https://awoo.studio/@beep"
+        },
+        {
             name: "Tumblr",
             href: "https://www.tumblr.com/queen-of-cringeland"
         },
@@ -35,8 +39,8 @@ export default {
             href: "https://twitter.com/beepsterr"
         },
         {
-            name: "Twitch",
-            href: "https://twitch.tv/beepstr"
+            name: "YouTube",
+            href: "https://youtube.com/@beepsterr"
         },
     ]
 }
